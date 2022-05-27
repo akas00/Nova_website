@@ -1,0 +1,65 @@
+.sub-title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    span {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: #fff;
+        font-family: $font-family-2;
+    }
+    .line {
+        content: "";
+        height: 2px;
+        width: 100px;
+        background-color: $accent_color;
+        margin-right: 15px;
+    }
+}
+.section-title {
+    h2 {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 34px;
+        color: #092c3f;
+        margin: 30px 0;
+    }
+}
+
+.default-button {
+    a {
+        background-color: $accent_color;
+        font-size: 16px;
+        color: #fff;
+        padding: 12px 32px;
+        font-weight: 500;
+        font-family: "Inter", sans-serif;
+        // border-radius: 6px;
+        transition: 0.3s;
+        &:hover {
+            color: $color_gray;
+            background-color: $color_white;
+        }
+    }
+}
+.default-button2 {
+    a {
+        border: 1px solid $accent_color;
+        font-size: 16px;
+        color: #fff;
+        padding: 12px 32px;
+        font-weight: 500;
+        font-family: "Inter", sans-serif;
+        transition: 0.3s;
+        &:hover {
+            color: $accent_color;
+            background-color: $color_white;
+            border: 1px solid $color_white;
+        }
+    }
+}

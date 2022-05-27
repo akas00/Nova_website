@@ -1,0 +1,68 @@
+body {
+    font-family: "Inter", sans-serif !important;
+}
+html {
+    scroll-behavior: smooth;
+}
+.post,
+.page {
+    margin: 0;
+}
+h1 {
+    font-size: 48px;
+    font-family: "Inter", sans-serif;
+
+    line-height: 1.27;
+    font-weight: 800;
+}
+h2 {
+    font-size: 48px;
+
+    line-height: 1.27;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 26px;
+
+    line-height: 1.27;
+    font-weight: 800;
+}
+h4 {
+    font-size: 36px;
+
+    line-height: 1.77;
+    font-weight: 800;
+}
+
+h5 {
+    font-size: 24px;
+
+    line-height: 2.66;
+    font-weight: 800;
+}
+
+p {
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+
+ul,
+li {
+    list-style: none !important;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none !important;
+    transition: 0.3s ease;
+    color: black;
+    font-family: "Inter", sans-serif;
+}

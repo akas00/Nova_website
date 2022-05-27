@@ -1,0 +1,170 @@
+.main-footer {
+    background-color: #262626;
+    padding: 30px;
+    padding-top: 80px;
+    margin-top: -40px;
+    @include breakpoint(small) {
+        padding: 80px 0 30px 0;
+    }
+
+    h6 {
+        color: #fff;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    .quick-links {
+        ul {
+            column-count: 2;
+            li {
+                position: relative;
+                &::before {
+                    content: "\f105 ";
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    font-family: FontAwesome;
+                    color: $accent_color;
+                }
+                a {
+                    color: #fff;
+                    transition: 0.3s;
+                    line-height: 30px;
+                    margin-left: 15px;
+                    &:hover {
+                        color: $accent_color;
+                    }
+                }
+            }
+        }
+    }
+    .input-field input {
+        background-color: #fff;
+        outline: none;
+        border: none;
+        padding: 10px;
+        font-size: 25px;
+        color: rgba(84, 82, 79, 0.68);
+        font-size: 14px !important;
+        margin-right: 15px;
+        border-radius: 0;
+    }
+    .email-button a {
+        background-color: $accent_color;
+        padding: 10px;
+        font-weight: 600;
+        text-align: center;
+        font-size: 14px !important;
+        color: #fff;
+        position: absolute;
+        top: 0%;
+        right: 40px;
+        border-radius: 0;
+        @include breakpoint(small) {
+            right: auto;
+        }
+    }
+    .email-button {
+        position: relative;
+        transition: 0.3s ease-in-out;
+        a {
+            transition: 0.3s;
+            &:hover {
+                background-color: #fff;
+                color: $accent_color;
+            }
+        }
+    }
+    .mid-footer {
+        p {
+            color: #fff;
+        }
+    }
+    .social-icons {
+        margin-top: 30px;
+        li {
+            display: inline-block;
+            background: #fff;
+            height: 42px;
+            width: 42px;
+            border-radius: 50%;
+            position: relative;
+            margin-right: 15px;
+            transition: 0.3s ease-in-out;
+            cursor: pointer;
+            &:hover {
+                background-color: $accent_color;
+            }
+            &:hover a i {
+                color: #fff;
+            }
+            a {
+                color: $accent_color;
+                position: absolute;
+                top: 52%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                i {
+                    font-size: 24px;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+    .footer-section-bottom-description {
+        img {
+            width: 200px !important;
+            margin-bottom: 20px;
+        }
+        p {
+            color: $color_white;
+            margin-top: 10px;
+        }
+        span {
+        }
+        .num {
+            color: #fff;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        .mail {
+            color: #fff;
+            display: block;
+            transition: 0.3s;
+            cursor: pointer;
+            &:hover {
+                color: $accent_color;
+            }
+        }
+    }
+}
+.accent-color {
+    color: $accent_color;
+}
+
+.footer-copyrights-section {
+    padding-top: 15px;
+    background-color: #20292f;
+    padding-bottom: 15px;
+    @include breakpoint(small) {
+        .d-flex {
+            flex-wrap: wrap;
+        }
+    }
+    span {
+        color: #fff;
+        font-size: 14px;
+        @include breakpoint(small) {
+            text-align: center;
+            width: 100%;
+        }
+        a {
+            border-bottom: 1px solid #fff;
+            color: #fff;
+            &:hover {
+                color: $accent_color;
+            }
+        }
+    }
+}
